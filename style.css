@@ -1,64 +1,50 @@
-/* Style the buttons that are used to open and close the accordion panel */
+
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: whitesmoke;
+    color:skyblue;
     cursor: pointer;
-    padding: 18px;
+    padding: 20px;
     width: 100%;
     text-align: left;
-    border: none;
+    border: black;
     outline: none;
-    transition: 0.4s;
+    transition: 0.10s;
   }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color:white;
   }
-  
-  /* Style the accordion panel. Note: hidden by default */
+
   .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: green;
     display: none;
     overflow: hidden;
   }
 
-
-
-
-  /* Sets the background color of the body to blue. Sets font to Rubik */
-
-body {
-    background-color: #0A2344;
-    font-family: 'rubik', sans-serif;
+  body {
+    background-color: turquoise;
+    font-family: 'rubik', Arial, Helvetica, sans-serif;
   }
   
-  /* Aligns the heading text to the center. */
-   
+ 
   h1 {
     text-align: center;
   }
-  
-  /* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
-  
+
   .accordion {
     width: 800px;
     margin: 90px auto;
     color: black;
-    background-color: white;
+    background-color: skyblue;
     padding: 45px 45px;
   }
-
-
-
 
   .accordion .container {
     position: relative;
     margin: 10px 10px;
   }
   
-  /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
   
   .accordion .label {
     position: relative;
@@ -79,8 +65,6 @@ body {
     transform: translateY(-50%);
   }
   
-  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
-  
   .accordion .content {
     position: relative;
     background: white;
@@ -92,8 +76,6 @@ body {
     transition: 0.5s;
   }
   
-  /* Adds a horizontal line between the contents */
-  
   .accordion hr {
     width: 100;
     margin-left: 0;
@@ -101,14 +83,11 @@ body {
   }
 
 
-  /* Unhides the content part when active. Sets the height */
 
 .accordion .container.active .content {
     height: 150px;
   }
-  
-  /* Changes from plus sign to negative sign once active */
-  
+   
   .accordion .container.active .label::before {
     content: '-';
     font-size: 30px;
