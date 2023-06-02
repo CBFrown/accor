@@ -1,7 +1,7 @@
 
 .accordion {
-    background-color: whitesmoke;
-    color:skyblue;
+    background-color: #ffe8b8;     /* accordion body color*/
+    color: none;
     cursor: pointer;
     padding: 20px;
     width: 100%;
@@ -9,10 +9,11 @@
     border: black;
     outline: none;
     transition: 0.10s;
+    border-radius: 50px;/*accordion body border*/
   }
 
   .active, .accordion:hover {
-    background-color:white;
+    background-color:none;
   }
 
   .panel {
@@ -23,7 +24,8 @@
   }
 
   body {
-    background-color: turquoise;
+    background-image: linear-gradient(to right, black , #0c0059);/* accordion body color*/
+    /* background-color: turquoise; */
     font-family: 'rubik', Arial, Helvetica, sans-serif;
   }
   
@@ -36,7 +38,6 @@
     width: 800px;
     margin: 90px auto;
     color: black;
-    background-color: skyblue;
     padding: 45px 45px;
   }
 
@@ -67,7 +68,7 @@
   
   .accordion .content {
     position: relative;
-    background: white;
+    background: #ffe8b8;
     height: 0;
     font-size: 20px;
     text-align: justify;
@@ -85,7 +86,7 @@
 
 
 .accordion .container.active .content {
-    height: 150px;
+    height: 150px;/*content container height*/
   }
    
   .accordion .container.active .label::before {
